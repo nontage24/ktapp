@@ -12,6 +12,13 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+        'view'=>[
+            'theme' => [
+             'pathMap' => [
+                '@frontend/views' =>['@frontend/themes/adminlte'],
+              ],
+            ],
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,

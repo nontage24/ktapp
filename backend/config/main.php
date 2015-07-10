@@ -13,6 +13,15 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
+        'view'=>[
+            'theme'=>[
+                'pathMap'=>[
+                    '@backend/views'=>[
+                        '@backend/themes/adminlte'
+                        ],
+                ],
+            ],
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
